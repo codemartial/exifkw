@@ -10,7 +10,7 @@ $ exiftool -ver
 ```
 
 ## Usage
-`exifkw "KEYWORD[,KEYWORD]... EXIFTOOL_OPTS... FILE...`
+`exifkw "KEYWORD[,KEYWORD]..." EXIFTOOL_OPTS... FILE...`
 ### Example
 ```
 $ exifkw "New Zealand,South Island,Queenstown,D750,70-200mm f/4G VR" *.jpg
