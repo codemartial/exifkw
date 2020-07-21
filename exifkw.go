@@ -9,7 +9,7 @@ import (
 
 func main() {
 	if len(os.Args) < 3 {
-		exit(1, fmt.Sprintln("Usage:", os.Args[0], "\"keyword[,keyword...\" paths"))
+		exit(1, fmt.Sprintln("Usage:", os.Args[0], "\"keyword[,keyword...]\" paths"))
 	}
 	args := []string{"-P", "-overwrite_original"}
 
