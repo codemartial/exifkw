@@ -1,5 +1,4 @@
-# exifkw: Flickr-style keywords with exiftool
-
+# exifkw: Append keywords with exiftool
 ## Installation
 `go get -u github.com/codemartial/exifkw`
 
