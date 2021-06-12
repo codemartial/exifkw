@@ -1,5 +1,4 @@
-# exifkw: Flickr-style keywords with exiftool
-
+# exifkw: Append keywords with exiftool
 ## Installation
 `go get -u github.com/codemartial/exifkw`
 
@@ -10,7 +9,7 @@ $ exiftool -ver
 ```
 
 ## Usage
-`exifkw "KEYWORD[,KEYWORD]... EXIFTOOL_OPTS... FILE...`
+`exifkw "KEYWORD[,KEYWORD]..." EXIFTOOL_OPTS... FILE...`
 ### Example
 ```
 $ exifkw "New Zealand,South Island,Queenstown,D750,70-200mm f/4G VR" *.jpg
