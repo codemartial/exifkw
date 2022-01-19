@@ -19,12 +19,14 @@ func main() {
 			continue
 		}
 		args = append(args, fmt.Sprintf("-keywords-=%s", kw), fmt.Sprintf("-keywords+=%s", kw))
-	}
+	} // Build exiftool args for adding keywords
+
+	args = append(args, os.Args[2:]...) // Append remaining exiftool args
+
 	if len(args) == 2 {
-		exit(2, "No keywords supplied")
+		exit(2, "No keywords or options supplied")
 	}
 
-	args = append(args, os.Args[2:]...)
 	cmd := exec.Command("exiftool", args...)
 	cmd.Stderr = os.Stderr
 	cmd.Stdout = os.Stdout
