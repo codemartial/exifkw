@@ -1,5 +1,4 @@
-# exifkw: Flickr-style keywords with exiftool
-
+# exifkw: Append keywords with exiftool
 ## Installation
 `go get -u github.com/codemartial/exifkw`
 
@@ -10,9 +9,10 @@ $ exiftool -ver
 ```
 
 ## Usage
-`exifkw "KEYWORD[,KEYWORD]... EXIFTOOL_OPTS... FILE...`
+`exifkw "KEYWORD[,KEYWORD]..." EXIFTOOL_OPTS... FILE...`
 ### Example
 ```
 $ exifkw "New Zealand,South Island,Queenstown,D750,70-200mm f/4G VR" *.jpg
    12 image files updated
 ```
+`exifkw` preserves the file modification timestamps and it does not create the `*_original` files that `exiftool` creates by default. It's better if you have a backup or copy of the files in case you add the wrong keywords, make other mistakes that you want to undo or if `exifkw` doesn't work as intended.
